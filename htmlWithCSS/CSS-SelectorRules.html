@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+	<title>Different types of selectors in css</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="selectors.css">
+	<style>
+
+		
+		
+		/* Element Selector */
+		/*.highlight,p{
+			font-family: verdana;
+		}*/
+		
+		/*p .highlight{
+			font-family: Arial;
+		}*/
+		div ul li{
+			
+			/*font-style: normal;
+			font-size: 15px;*/
+			list-style: none;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>CSS Selectors</h2>
+	<div>
+		<p>
+			CSS has <span class = 'highlight'>element selectors ,</span><span class="highlight"> id selectors </span> and <span class="highlight"> class selectors </span> Element and class selectors are more generic and id selectors are specific to the id element. It is not preferred to give an &quot;id&quot; for every element. The css rule for the elements will change if there is an &quot;id&quot; element for every element.
+		</p>
+		<h3>CSS Rules</h3>
+		<div>
+			
+				<ol>
+					<li>
+						<ul>
+							<li>CSS Selector-Rule 1: works like select all </li>
+							<li>Syntax : selector1,selector2{}</li>
+							<li>Meaning: applies css for selector 1 and selector 2.</li>
+							<li>Example: p,.higlight(Apply css for paragraph and .highlight)</li>
+						</ul>
+					</li>
+
+					<li>
+						<ul>
+							<li>CSS Selector Rule-2:applies a filter like 'in'</li>
+							<li>Syntax : selector1 selector2{}</li>
+							<li>Meaning: Look for Selector1 then look for selector2. If selector2 is found anywhere down as descendant apply the style.
+							Example: p .highlight(In a paragraph,look for &quot; .highlight&quot; class if found then apply the css rule)
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>CSS Selector Rule 3:applies for immediate child</li>
+							<li>Syntax : selector1>selector2{}</li>
+							<li>Meaning: If Selector2 is immediate child of selector 1 then apply the style.</li>
+							<li>Example: div>p(Look for div, if  a paragraph element is immediate descendant then apply the css rule)</li>
+						</ul>
+					</li>
+				</ol>
+			
+		</div>
+	</div>	
+	
+	
+</body>
+</html>

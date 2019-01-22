@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Box Model</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="selectors.css" >
+	<style>
+		#box{
+			padding:5px;
+			border:5px solid blue;
+			margin:5px;
+			/*width:100%;
+			height:100%;*/
+			
+			/* background-color,background-image,background-repeat,background-position
+			TODO:-display the image or autofit in div;
+			*/
+			background: url(../images/picture-with-quote.jpg) no-repeat; 
+			overflow: auto;
+
+
+		}
+		#content{
+			padding:20px;
+			border:5px solid red;
+			margin:5px;
+			color:grey;
+		}
+	</style>
+</head>
+<body>
+	<h2>CSS Box Model</h2>
+	<p>In the Box model,the element is layout in terms of boxes.Every box has margin,border,padding and content respectively.
+	Before CSS 3 , the width defined for an element used to be the content width.After CSS 3,by changing the box-sizing:'border-box' the width of the box
+	is the entire width of the box including padding and border.
+	</p>
+	<div id="box">
+		<div id="content">
+			Box Content.
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS Float positioning</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="selectors.css">
+	<style>
+	*{
+		box-sizing: border-box;
+	}
+	#box,#box2{
+		width: 300px;
+		height:300px;
+		border: 3px solid green;
+		background-color: orange;
+		margin:10px;
+	}
+	p{
+			border:5px solid red;
+			margin: 2px;
+			height: 40px;
+			width: 40px;
+			overflow: hidden;
+	}
+	#p1{
+			float: left;
+	}
+	#p2{
+			float:left;
+	}
+	#p3{
+			float:right;
+	}
+	#clearFloat{
+			clear: both;
+	}
+	#p4{
+		position: relative;
+		top:40px;
+		left:50px;
+	}
+	#box2{
+		position: relative;
+	}
+	#p6{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	</style>
+</head>
+<body>
+	<h2>CSS Float positioning</h2>
+	<div id="box">
+		<p id="p1">Column 1</p>
+		<p id="p2">Column 2</p>
+		<p id="p3">Column 3</p>
+		<div id="clearFloat">See if floating still exists?</div>
+	</div>
+	<div id="box2">
+		<p id="p4" style="background: purple;"></p>
+		<p id="p5" style="background: pink;"></p>
+		<p id="p6" style="background: white"></p>
+	</div>
+</body>
+</html>

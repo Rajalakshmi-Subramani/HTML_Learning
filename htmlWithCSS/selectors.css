@@ -1,0 +1,17 @@
+body{
+	font-family: Arial,Helvetica,sans-serif;
+}
+h2{
+	color:green;
+	text-align: center;
+}
+p{
+	color:#0000ff;
+
+}
+/* class selector */
+.highlight{
+	font-weight: bold;
+	font-style: italic;
+	
+}
